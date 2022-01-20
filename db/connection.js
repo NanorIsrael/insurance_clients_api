@@ -23,7 +23,7 @@ db.func('version')
     console.log('Database connection success', process.env.DB_HOST)
     })
     .catch(error => {
-        console.log('Database connection error')
+        console.log('Database connection error', process.env.DB_HOST)
     });
 
 module.exports =  db;
