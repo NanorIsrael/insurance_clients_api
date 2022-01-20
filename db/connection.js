@@ -1,15 +1,13 @@
 const bbp = require('bluebird');
 
-
 const initComponents = {
     promiseLib: bbp,
 };
+
 const pgp = require('pg-promise')(initComponents);
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
-
 const cn = {
-        host: 'ec2-3-212-143-188.compute-1.amazonaws.com',
+        host: proocess.env.HOST,
         port: 5432,
         database: 'dbrcffl9n4mov2',
         user: 'guclxasktufdol',
