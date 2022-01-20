@@ -4,6 +4,7 @@ const bbp = require('bluebird');
 const initComponents = {
     promiseLib: bbp,
 };
+
 const pgp = require('pg-promise')(initComponents);
 
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
