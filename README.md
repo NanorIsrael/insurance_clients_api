@@ -23,43 +23,52 @@ get: URL/incidents
 
 # Sample response:
 {
-  client_id	2
-incident_desc	"a hot weather experienced 65%"
-city	"London"
-country	"UK"
-weather_report	
-dt	1642664705
-id	2643743
-cod	200
-sys	
-id	2019646
-type	2
-sunset	1642696071
-country	"GB"
-sunrise	1642665284
-base	"stations"
-main	
-temp	274.27
-humidity	87
-pressure	1034
-temp_max	276.01
-temp_min	271.07
-feels_like	270.92
-name	"London"
-wind	
-deg	290
-speed	3.09
-coord	
-lat	51.5085
-lon	-0.1257
-clouds	
-all	6
-weather	
-0	
-id	800
-icon	"01n"
-main	"Clear"
-description	"clear sky"
-timezone	0
-visibility	10000
-}
+        "client_id": 3,
+        "incident_desc": "results from analysis indications",
+        "city": "Miami",
+        "country": "US",
+        "weather_report": {
+            "dt": 1642721328,
+            "id": 4164138,
+            "cod": 200,
+            "sys": {
+                "id": 2009435,
+                "type": 2,
+                "sunset": 1642719296,
+                "country": "US",
+                "sunrise": 1642680499
+            },
+            "base": "stations",
+            "main": {
+                "temp": 296.19,
+                "humidity": 89,
+                "pressure": 1017,
+                "temp_max": 297.59,
+                "temp_min": 294.26,
+                "feels_like": 296.87
+            },
+            "name": "Miami",
+            "wind": {
+                "deg": 130,
+                "gust": 4.47,
+                "speed": 1.34
+            },
+            "coord": {
+                "lat": 25.7743,
+                "lon": -80.1937
+            },
+            "clouds": {
+                "all": 75
+            },
+            "weather": [
+                {
+                    "id": 701,
+                    "icon": "50n",
+                    "main": "Mist",
+                    "description": "mist"
+                }
+            ],
+            "timezone": -18000,
+            "visibility": 10000
+        }
+    }
