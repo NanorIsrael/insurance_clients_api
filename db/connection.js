@@ -20,7 +20,7 @@ const db = pgp(cn);
 
 db.func('version')
     .then(data => {   
-    console.log('Database connection success', process.env.DB_HOST)
+    console.log('Database connection success', typeof process.env.DB_HOST)
     })
     .catch(error => {
         console.log('Database connection error', process.env.DB_HOST)
