@@ -21,6 +21,7 @@ router.post('/', fetchWeatherData, checkSchema(incidentsSchema), (req, res, next
                 res.status(201).json({message: 'Incident added successfully.'});
             })
             .catch((error) => {
+                console.log(error)
                 res.status(500).json({message: 'An error occurred. Please try again after some time.'});
             })
     }
@@ -33,6 +34,7 @@ router.get('/', (req, res, next) => {
             res.status(201).json(result);
         })
         .catch((error) => {
+            console.log(error)
             res.status(500).json({message: 'An error occurred. Please try again after some time.'});
         })
 
