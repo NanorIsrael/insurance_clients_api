@@ -7,7 +7,7 @@ const initComponents = {
 const pgp = require('pg-promise')(initComponents);
 
 const cn = {
-        host: proocess.env.HOST,
+        host: process.env.HOST,
         port: 5432,
         database: 'dbrcffl9n4mov2',
         user: 'guclxasktufdol',
