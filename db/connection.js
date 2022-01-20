@@ -5,7 +5,7 @@ const initComponents = {
     promiseLib: bbp
 };
 const pgp = require('pg-promise')(initComponents);
-const cn = `postgres://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
+const cn = process.env.DATABASE_URL;
 const db = pgp(cn);
 
 db.func('version')
