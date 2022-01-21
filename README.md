@@ -1,27 +1,43 @@
 # Insurance_clients_api
-1. serve two api's one for posting reports which has the body:
+serves two api's.
 
+
+## POST Enpoint
+For posting reports.
+
+`post: URL/incidents`
+
+
+
+body:
+```javascript
 {
-  "client_id": "2",
-  "incident_desc": "control records for the average summer weather",
-  "city": "London",
-  "country": "UK"
-}
-# Enpoints
-post: URL/incidents
-
-# Response
+      "client_id": "2",
+      "incident_desc": "control records for the average summer weather",
+      "city": "London",
+      "country": "UK"
+ }
+```
+### Response
+```json
 {
   message: "Incident added successfully."
 }
+```
+[https://insurance-appi.herokuapp.com/incidents](https://insurance-appi.herokuapp.com/incidents)
 
 
-2. A get endpoint which list all incidents.
-# Endpoint
-get: URL/incidents
 
 
-# Sample response:
+## GET Endpoint
+A get endpoint which list all incidents.
+
+`get: URL/incidents
+`
+
+
+### Sample response:
+```javascript
 {
         "client_id": 3,
         "incident_desc": "results from analysis indications",
@@ -72,3 +88,5 @@ get: URL/incidents
             "visibility": 10000
         }
     }
+```
+[https://insurance-appi.herokuapp.com/incidents](https://insurance-appi.herokuapp.com/incidents)
